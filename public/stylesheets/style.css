@@ -62,22 +62,22 @@ textarea:focus, input:focus{
   }
 
   .intro img {
-    width: 250%;
+    width: 200%;
   }
   .intro h2 {
-    width: 250%;
+    width: 200%;
     font-size: 8vw;
   }
   .intro p {
-    width: 250%;
+    width: 200%;
     font-size: 7vw;
   }
   .form {
-    width: 250%;
+    width: 160%;
   }
 
   #email {
-    width: 250%;
+    width: 160%;
     height: 60px;
     font-size: 7vw;
   }
