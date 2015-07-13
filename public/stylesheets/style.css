@@ -17,19 +17,19 @@ body {
   width: 100%;
 }
 
-.intro p {
-  width: 100%;
-  font-size: 1.3vw;
-  letter-spacing: 0em;
-  font-family: 'Roboto Slab', serif;
-  text-align: left;
-}
-
 .intro h2 {
   width: 100%;
   font-weight: 300;
-  font-size: 1.5vw;
+  font-size: 1.28em;
   color: #bdc3c7;
+}
+
+.intro p {
+  width: 100%;
+  font-size: 1.1em;
+  letter-spacing: 0em;
+  font-family: 'Roboto Slab', serif;
+  text-align: left;
 }
 
 .form {
@@ -58,28 +58,28 @@ textarea:focus, input:focus{
 @media only screen and (max-width : 800px){
 
   .intro {
-    margin-left: 80px;
+    margin-left: 20px;
   }
 
   .intro img {
-    width: 150%;
+    width: 250%;
   }
   .intro h2 {
-    width: 150%;
-    font-size: 5vw;
+    width: 250%;
+    font-size: 8vw;
   }
   .intro p {
-    width: 150%;
-    font-size: 4vw;
+    width: 250%;
+    font-size: 7vw;
   }
   .form {
-    width: 150%;
+    width: 250%;
   }
 
   #email {
-    width: 150%;
+    width: 250%;
     height: 60px;
-    font-size: 4vw;
+    font-size: 7vw;
   }
 
 
