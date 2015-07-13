@@ -82,5 +82,14 @@ textarea:focus, input:focus{
     font-size: 7vw;
   }
 
+  input {
+    border: solid white 1px;
+    border-color: white;
+    background-color: #121212;
+    color: #bdc3c7;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+  }
+
 
 }
