@@ -16,12 +16,12 @@ body {
 
 .intro img {
   width: 100%;
-  margin-top: 300px;
+  margin-top: 200px;
 }
 
 .intro p {
   width: 100%;
-  font-size: 1.3em;
+  font-size: 1em;
   letter-spacing: 0em;
   font-family: 'Roboto Slab', serif;
   text-align: left;
@@ -29,7 +29,7 @@ body {
 
 .intro h2 {
   font-weight: 300;
-  font-size: 1.7em;
+  font-size: 1.25em;
   color: #bdc3c7;
 }
 
