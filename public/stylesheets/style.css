@@ -73,13 +73,14 @@ textarea:focus, input:focus{
     font-size: 7vw;
   }
   .form {
-    width: 160%;
+    width: 155%;
   }
 
   #email {
-    width: 160%;
-    height: 60px;
-    font-size: 7vw;
+    width: 155%;
+    height: 50px;
+    font-size: 6vw;
+    text-align: center;
   }
 
   input {
