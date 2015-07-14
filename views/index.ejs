@@ -24,14 +24,14 @@
     <p>Be the first to know when we launch! Subscribe to our email list below to receive updates and special offers.</p>
 
     <div class="form">
-      <form  id="form" action="https://menicuresalon.us11.list-manage.com/subscribe/post?u=1c2ca82bcff6bf3a4c0ec81d7&amp;id=c40c5f1380" method="GET">
+      <form  id="form" action="https://menicuresalon.us11.list-manage.com/subscribe/post?u=1c2ca82bcff6bf3a4c0ec81d7&amp;id=c40c5f1380" method="POST">
         <input type="email" value="" name="EMAIL" autofocus="autofocus" autocorrect="off" id= "email" placeholder="info@menicuresalon.com">
         <p id="response"> </p>
       </form>
     </div>
   </div>
 
-  <script>
+  <!-- <script>
   var paragraph = document.getElementById('response');
   var text = document.getElementById("email");
   $('#form').submit(function(e) {
@@ -46,17 +46,17 @@
         success     : function(data) {
             if (data.result != "success") {
                 paragraph.innerHTML = data.msg;
-                text.placeholder = "Oopsy daisy! Error :-("; 
+                text.placeholder = "Oopsy daisy! Error :-(";
                 form.reset();
             } else {
                 paragraph.innerHTML = data.msg;
-                text.placeholder = "Thanks so much!"; 
+                text.placeholder = "Thanks so much!";
                 form.reset();
             }
         }
     });
     return false;
   });
-  </script>
+  </script> -->
 </body>
 </html>
