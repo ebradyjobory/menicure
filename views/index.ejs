@@ -14,20 +14,49 @@
       ga('send', 'pageview');
     </script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
 </head>
 <body ng-app="Menicure">
   <div class="intro">
     <img src="https://s3.amazonaws.com/menicure/images/menicure+logo.png" />
     <h2>Men's Grooming Services &middot; Coming Soon to Atlanta</h2>
     <p>Be the first to know when we launch! Subscribe to our email list below to receive updates and special offers.</p>
+
     <div class="form">
-      <form id="form" action="" method="GET">
-        <input type="hidden" name="u" value="">
-        <input type="hidden" name="id" value="">
-        <input  autofocus="autofocus" id= "email" type="EMAIL" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="" placeholder="info@menicuresalon.com">
+      <form  id="form" action="https://menicuresalon.us11.list-manage.com/subscribe/post?u=1c2ca82bcff6bf3a4c0ec81d7&amp;id=c40c5f1380" method="GET">
+        <input type="email" value="" name="EMAIL" autofocus="autofocus" autocorrect="off" id= "email" placeholder="info@menicuresalon.com">
         <p id="response"> </p>
       </form>
     </div>
   </div>
+
+  <script>
+  var paragraph = document.getElementById('response');
+  var text = document.getElementById("email");
+  $('#form').submit(function(e) {
+    var $this = $(this);
+    $.ajax({
+        type: "GET", // GET & url for json slightly different
+        url: "https://menicuresalon.us11.list-manage.com/subscribe/post?u=1c2ca82bcff6bf3a4c0ec81d7&amp;id=c40c5f1380",
+        data: $this.serialize(),
+        dataType    : 'json',
+        contentType: "application/json; charset=utf-8",
+        error       : function(err) { alert("Could not connect to the registration server."); },
+        success     : function(data) {
+            if (data.result != "success") {
+                paragraph.innerHTML = data.msg;
+                text.placeholder = "Oopsy daisy! Error :-("; 
+                form.reset();
+            } else {
+                paragraph.innerHTML = data.msg;
+                text.placeholder = "Thanks so much!"; 
+                form.reset();
+            }
+        }
+    });
+    return false;
+  });
+  </script>
 </body>
 </html>
